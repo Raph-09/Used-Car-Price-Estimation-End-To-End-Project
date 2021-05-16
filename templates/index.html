@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Car Price</title>
+{% endblock %}
+
+{% block body %}
+<body>
+
+    <div>
+        <form action="{{ url_for('predict')}}" method="post">
+            <h1>UsedCar Price PredictorApp</h1>
+           
+            
+            <h2>Enter the following fields to predict the price of any used car:</h2>
+            <input id="first" name="Year" type="number " placeholder="Enter year car was made">
+            <input id="second" name="Present_Price" required="required" placeholder="Enter showroom price of car" >
+            <h3>Is the car popular?:</h3>
+            <select name="popularity" id="popular" required="required" placeholder="Is the car popular">
+                <br>
+                <option value="not_popular">popular</option>
+                <option value="popular">not_popular</option>
+            </select>
+            <h3>Select Fuel Type:</h3>
+            <select name="Fuel_Type_Petrol" id="fuel" required="required" placeholder="Enter fuel type">
+               <br>
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+            </select>
+            <h3>Select Seller Type:</h3><select name="Seller_Type_Individual" id="resea" required="required" placeholder="Enter seller type(individual or dealer)">
+                <option value="Dealer">Dealer</option>
+                <option value="Individual">Individual</option>
+            </select>
+            <h3>Select if ur car is automatic or manuel:</h3><select name="Transmission_Mannual" id="research" required="required" placeholder="Enter if ur car is manual or automatic">
+                <option value="Mannual">Manual Car</option>
+                <option value="Automatic">Automatic Car</option>
+            </select>
+            <button id="sub" type="submit ">Predict Selling Price</button>
+            <br>
+
+
+
+
+        </form>
+
+
+
+
+    </div>
+
+{% endblock %}
+
+
