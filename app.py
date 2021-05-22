@@ -4,8 +4,7 @@ import requests
 import pickle
 import numpy as np
 import sklearn
-from sklearn.preprocessing import StandardScaler
-#added branch
+
 app = Flask(__name__)
 model = pickle.load(open('regression_model.pkl', 'rb'))
 @app.route('/',methods=['GET'])
