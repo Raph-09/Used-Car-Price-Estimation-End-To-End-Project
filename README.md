@@ -5,6 +5,10 @@
 LINK TO APP:https://www.google.com/search?q=car%20images&tbm=isch&tbs=il:cl&rlz=1C1CHNY_enNG904NG904&hl=en-US&sa=X&ved=0CAAQ1vwEahcKEwjYnsjQmIjxAhUAAAAAHQAAAAAQAg&biw=1010&bih=474
 ![car-image](https://user-images.githubusercontent.com/72034856/121199174-9eb9d700-c86a-11eb-83b4-c82acddc6ef0.jpg)
 
+## #Task: 
+Build machine learning app that can predict the price of used car
+# Functionality:
+The app takes in inputs from the users, and predict the price for the used car the user is interested in
 # Description
 The used car price prediction is targeted towards the indian market using the cardekho dataset found on kaggle.
 This project is for an end to end project where i analyse data ,build model and create a simple web ui for people to interact with.
@@ -23,4 +27,25 @@ The following steps where followed;
     c) Random forest regressor with r2 of 0.97, RMSE 0.79, MAE 0.46 on test data
 
     d) Ensemble method with r2 of 0.96, RMSE 0.58, MAE 0.47
+    
+    
+ # Run Locally
+  Run this commandon ur command line:https://github.com/Raph-09/Used-Car-Price-Estimation-End-To-End-Project.git
+  
+  Install the packages that are found in requirement.txt file
+  
+ # Tech Stack
+ sklearn
+ 
+ pandas
+ 
+ numpy
+ 
+ Flask
+ 
+ css
+ 
+ html
+ 
+ bootstrap
                                                                                                                                                     
